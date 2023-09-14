@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
+    android:background="@drawable/fon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/ImageLogo"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="150dp"
+        android:background="@drawable/button2"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logotipe" />
+
+
+    <EditText
+        android:id="@+id/textEmail"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button1"
+        android:elevation="20dp"
+        android:gravity="center"
+        android:hint="E-mail"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:text=""
+        android:textColorHint="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImageLogo" />
+
+    <EditText
+        android:id="@+id/textPassword"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button1"
+        android:elevation="20dp"
+        android:gravity="center"
+        android:hint="Password"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:text=""
+        android:textColorHint="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEmail" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonExit"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/buuton3"
+        android:text="Войти"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

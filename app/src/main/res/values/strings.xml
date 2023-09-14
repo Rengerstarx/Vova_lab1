@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Semenov_Lab_1</string>
+    <string-array name="Emails">
+        <item>new.email1@example.com</item>
+        <item>new.email2@example.com</item>
+        <item>new.email3@example.com</item>
+        <item>new.email4@example.com</item>
+        <item>new.email5@example.com</item>
+    </string-array>
+    <string-array name="Passwords">
+        <item>newpassword1</item>
+        <item>newpassword2</item>
+        <item>newpassword3</item>
+        <item>newpassword4</item>
+        <item>newpassword5</item>
+    </string-array>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+</resources>
