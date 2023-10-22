@@ -1,5 +1,7 @@
 package com.example.semenov_lab_1.ui.dashboard
 
+import android.R
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -29,9 +31,7 @@ class DashboardFragment : Fragment() {
         val root: View = binding.root
 
         val textView: TextView = binding.textDashboard
-        dashboardViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
+        textView.text = requireContext().getSharedPreferences("Name", Context.MODE_PRIVATE).getString("Name", "Никакой рецепт не выбран еще")
         return root
     }
 
