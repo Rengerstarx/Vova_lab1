@@ -3,6 +3,7 @@ package com.example.semenov_lab_1.ui.home
 import android.R
 import android.content.Context
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -69,6 +70,10 @@ class HomeFragment : Fragment(), RcAdapter.Listener {
                     field[3].toString(),
                     field[4] as Int
                 )
+                Log.e("${recipe.Name}:", "Calorie:${recipe.Calorie}" +
+                        "\nTime:${recipe.Time}" +
+                        "\nDifficulty:${recipe.Difficulty}" +
+                        "\nIngredients${recipe.Ingredients}")
                 adapter.RecipeCreate(recipe)
             }
         }
